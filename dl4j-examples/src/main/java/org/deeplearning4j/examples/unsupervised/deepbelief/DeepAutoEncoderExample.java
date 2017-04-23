@@ -35,7 +35,7 @@ public class DeepAutoEncoderExample {
         int numSamples = MnistDataFetcher.NUM_EXAMPLES;
         int batchSize = 1000;
         int iterations = 1;
-        int listenerFreq = iterations/5;
+        int listenerFreq = iterations*5;
 
         log.info("Load data....");
         DataSetIterator iter = new MnistDataSetIterator(batchSize,numSamples,true);
